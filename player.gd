@@ -1,13 +1,17 @@
 extends KinematicBody2D
 
 var velocity = Vector2.ZERO
-const up = Vector2(0, -1)
-export var speed = 5 * 96
+export var jump_height = -10
+export var speed = 100
 
 func _physics_process(_delta):
-	
-	velocity = move_and_slide(velocity, up)
+	var input_vector = Vector2.ZERO
+	var right = Input.get_action_strength("ui_right")
+	var left = Input.get_action_strength("ui_left")
+	input_vector.x = right - left
+	input_vector = input_vector.normalized()
+	if Input.is_action_just_pressed("ui_up"):
+		input_vector.y = jump_height
+	velocity = input_vector
+	velocity = move_and_slide(velocity * speed)
 
-func input():
-	var input_vector = -int(Input.get_action_strength("left")) + int(Input.is_action_just_pressed("right"))
-	velocity.x = speed * input_vector
