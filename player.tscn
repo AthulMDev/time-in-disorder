@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 4.78332, 18.3797 )
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=2]
 resource_name = "Idle"
 length = 0.1
 tracks/0/type = "value"
@@ -22,8 +22,7 @@ tracks/0/keys = {
 "values": [ 4 ]
 }
 
-[sub_resource type="Animation" id=2]
-resource_name = "Left"
+[sub_resource type="Animation" id=3]
 length = 0.4
 loop = true
 tracks/0/type = "value"
@@ -51,8 +50,7 @@ tracks/1/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="Animation" id=3]
-resource_name = "Right"
+[sub_resource type="Animation" id=4]
 length = 0.4
 loop = true
 tracks/0/type = "value"
@@ -81,6 +79,7 @@ tracks/1/keys = {
 }
 
 [node name="player" type="KinematicBody2D"]
+collision_layer = 3
 script = ExtResource( 1 )
 max_jump_height = 2.0
 min_jump_height = 1.0
@@ -89,8 +88,7 @@ jump_duration = 0.5
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 0.707108, 0.7071 )
 texture = ExtResource( 2 )
-flip_h = true
-hframes = 5
+hframes = 6
 frame = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -98,6 +96,6 @@ position = Vector2( 0.893815, 2.79866 )
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/Idle = SubResource( 4 )
-anims/Left = SubResource( 2 )
-anims/Right = SubResource( 3 )
+anims/Idle = SubResource( 2 )
+anims/Left = SubResource( 3 )
+anims/Right = SubResource( 4 )

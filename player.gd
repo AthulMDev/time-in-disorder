@@ -15,6 +15,7 @@ export var jump_duration : float
 
 onready var sprite = $Sprite
 onready var animator = $AnimationPlayer
+onready var dialog = $"dialog system"
 
 func _ready():
 	#Stuff That I Copied from GE's Code LOL
@@ -41,3 +42,6 @@ func _physics_process(_delta):
 	velocity = velocity.linear_interpolate(target_velocity, 0.1) #interpolating the velocity
 	velocity.y += gravity * Speed * _delta #Adding Gravity
 	velocity = move_and_slide(velocity , Vector2.UP)
+
+
+
