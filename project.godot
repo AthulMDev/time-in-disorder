@@ -16,7 +16,12 @@ _global_script_class_icons={
 [application]
 
 config/name="time watch at disorder"
+run/main_scene="res://mainmenu.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Globals="*res://globals.gd"
 
 [display]
 
