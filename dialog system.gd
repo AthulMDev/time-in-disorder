@@ -1,19 +1,13 @@
 extends Control
 
-export var dialogue = [
-	'Time Watch:error error opening ',
-	'testin',
-	'are ya workin',
-]
-
+export var dialogue = []
 var dialogue_index = 0
 var finished = false
-onready var label = $RichTextLabel
+onready var label = $TextureRect/RichTextLabel
 onready var tween = $Tween
 onready var sprite = $Sprite
 
-func _ready():
-	load_dialog()
+func _ready():	hide()
 
 func _process(_delta):
 	sprite.visible = finished
@@ -31,7 +25,7 @@ func load_dialog():
 		)
 		tween.start()
 	else:
-		queue_free()
+		hide()
 
 
 func _on_Tween_tween_completed(object, key):

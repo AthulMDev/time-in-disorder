@@ -1,14 +1,13 @@
 extends Node2D
 
-onready var dialog = $"player/dialog system"
+onready var dialog = $"CameraMan/dialogue system"
 
-func _on_dialogue_area_entered(area):
-	dialog.show()
+func _ready():
 	dialog.dialogue = [
-		'',
-		'time status = looping',
+		'Error, Showing Time Status',
+		'time status = looping(terrible)',
 		'YOU: wait WHAT!',
-		'Time Watch:Oppening guide activating',
+		'Time Watch:Opening guide activating',
 		'Hello I am exa time watch ai',
 		'Exa:I am here to help you with your',
 		'Problems your Watch has Mulfuntioned!',
@@ -21,3 +20,5 @@ func _on_dialogue_area_entered(area):
 		'Jump Use Space',
 		'Dont Forget the slippery Slopes'
 	]
+	dialog.load_dialog()
+	dialog.show()

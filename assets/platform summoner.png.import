@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/camarausous.png-ac63ae8d6980ac84ae0c7df7884eefac.stex"
+path="res://.import/platform summoner.png-a1596fdff941b46d0f38b9b665829f10.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/camarausous.png"
-dest_files=[ "res://.import/camarausous.png-ac63ae8d6980ac84ae0c7df7884eefac.stex" ]
+source_file="res://assets/platform summoner.png"
+dest_files=[ "res://.import/platform summoner.png-a1596fdff941b46d0f38b9b665829f10.stex" ]
 
 [params]
 

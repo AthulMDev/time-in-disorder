@@ -42,6 +42,3 @@ func _physics_process(_delta):
 	velocity = velocity.linear_interpolate(target_velocity, 0.1) #interpolating the velocity
 	velocity.y += gravity * Speed * _delta #Adding Gravity
 	velocity = move_and_slide(velocity , Vector2.UP)
-
-
-

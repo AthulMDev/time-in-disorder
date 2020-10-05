@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/the pumkin monster.png-ed526d74e3e33525e208bcf199f577f9.stex"
+path="res://.import/level two tileset.png-4842cf6745837224858c47ad96448e60.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/the pumkin monster.png"
-dest_files=[ "res://.import/the pumkin monster.png-ed526d74e3e33525e208bcf199f577f9.stex" ]
+source_file="res://assets/level two tileset.png"
+dest_files=[ "res://.import/level two tileset.png-4842cf6745837224858c47ad96448e60.stex" ]
 
 [params]
 
