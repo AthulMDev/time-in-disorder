@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://assets/dialog box.png" type="Texture" id=1]
 [ext_resource path="res://assets/dialog indicator.png" type="Texture" id=2]
 [ext_resource path="res://dialog system.gd" type="Script" id=3]
+[ext_resource path="res://assets/select.wav" type="AudioStream" id=4]
 
 [sub_resource type="Animation" id=1]
 resource_name = "idle"
@@ -66,3 +67,6 @@ method_call_mode = 1
 anims/idle = SubResource( 1 )
 
 [node name="Tween" type="Tween" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )

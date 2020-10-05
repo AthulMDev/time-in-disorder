@@ -15,7 +15,7 @@ export var jump_duration : float
 
 onready var sprite = $Sprite
 onready var animator = $AnimationPlayer
-onready var dialog = $"dialog system"
+onready var jumpAudio = $AudioStreamPlayer
 
 func _ready():
 	#Stuff That I Copied from GE's Code LOL

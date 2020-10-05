@@ -9,4 +9,4 @@ func _ready():
 		'looks like a timestar is close lets find it!'
 	]
 	dialog.load_dialog()
-	show()
+	dialog.show()

@@ -11,7 +11,7 @@ func _ready():
 		'Hello I am exa time watch ai',
 		'Exa:I am here to help you with your',
 		'Problems your Watch has Mulfuntioned!',
-		'To Fix it find 5 time stars',
+		'To Fix it find 3 time stars',
 		'Also Your Now stuck in the 15 second',
 		'timeline you will come back to a louran',
 		'(the thing you are standing on)',

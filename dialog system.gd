@@ -6,6 +6,7 @@ var finished = false
 onready var label = $TextureRect/RichTextLabel
 onready var tween = $Tween
 onready var sprite = $Sprite
+onready var selectSound = $AudioStreamPlayer
 
 func _ready():	hide()
 
